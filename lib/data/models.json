@@ -1,0 +1,44 @@
+{
+    "User": {
+        "userID": 0,
+        "names": "",
+        "firstLastname": "",
+        "secondLastname": "",
+        "gender": "",
+        "dateOfBirth": "00/00/00",
+        "originCountry": "",
+
+        "userAccountSettings": {
+            "email": "",
+            "password": "",
+            "createdAt": "",
+
+            "telephoneNumber": {
+                "countrycode": "",
+                "number": ""
+            }
+        }
+    },
+
+    "Articles": {
+        "articleID": 0,
+        "title": "",
+        "summary": "",
+        "dateOfPublication": "00/00/00",
+        "genre": "",
+        "type": "",
+        "contentURL": "URL"
+    },
+
+    "ArticleGenres": {
+        "articleGenreID": 0,
+        "name": "",
+        "description": ""
+    },
+    
+    "ArticleTypes": {
+        "ArticleTypeID": 0,
+        "name": "",
+        "description": ""
+    }
+}

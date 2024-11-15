@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746347571819",
+    "project_id": "yournal-app-fec3b",
+    "storage_bucket": "yournal-app-fec3b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746347571819:android:d4a4d0f4928608d05f9f2e",
+        "android_client_info": {
+          "package_name": "com.example.yournal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS469KTBabxeTE6nXonN2b9FZlU_BUzBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
