@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yournal/config/styles/yournal_text_styles.dart';
+import 'package:yournal/presentation/screens/signup/contact_info_screen.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_container.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_appbar.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_text_field.dart';
@@ -18,8 +19,11 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return YournalContainer(
-      appBar: const YournalAppbar(
-        icon: Icons.arrow_back
+      appBar: YournalAppbar(
+        icon: Icons.arrow_back,
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
       child: Material(
           color: Colors.transparent, 
@@ -50,8 +54,14 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
               const SizedBox( height: 10 ),
               const YournalDatepicker(),
               const SizedBox( height: 50 ),
-              const YournalSubmitButton(
+              YournalSubmitButton(
                 text: "Next",
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (builder) => const ContactInfoScreen())
+                  );
+                },
               )
             ]
           )

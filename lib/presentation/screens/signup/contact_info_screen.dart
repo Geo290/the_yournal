@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yournal/config/themes/yournal_themes.dart';
+import 'package:yournal/presentation/screens/signup/create_password_screen.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_container.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_appbar.dart';
 import 'package:yournal/presentation/widgets/shared/yournal_mobile_number_field.dart';
@@ -12,8 +13,11 @@ class ContactInfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return YournalContainer(
-      appBar: const YournalAppbar(
+      appBar: YournalAppbar(
         icon: Icons.arrow_back,
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
       child: Material(
         color: Colors.transparent,
@@ -53,12 +57,17 @@ class ContactInfoScreen extends StatelessWidget {
               const SizedBox(height: 10),
               Text(
                 "You'll recive a verification email.",
-                style: TextStyle(color: YournalThemes.selectColor('whiteText')),
+                style: TextStyle(color: YournalThemes.selectColor('white')),
               ),
               const SizedBox(height: 140),
               YournalSubmitButton(
                 text: "Next",
-                onPressed: (){}
+                onPressed: (){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (builder) => const CreatePasswordScreen())
+                  );
+                }
               )
             ],
           ),
