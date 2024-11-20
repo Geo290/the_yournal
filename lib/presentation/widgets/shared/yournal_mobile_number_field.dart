@@ -32,7 +32,7 @@ class YournalMobileNumberField extends StatelessWidget {
         ),
         Expanded(
           child: TextField(
-            autofocus: true,
+            autofocus: false,
             keyboardType: TextInputType.number,
             maxLength: 10,
             decoration: InputDecoration(

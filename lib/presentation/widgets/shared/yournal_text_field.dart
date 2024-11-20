@@ -22,7 +22,7 @@ class YournalTextField extends StatelessWidget {
       validator: validator,
       keyboardType: inputType ?? TextInputType.text,
       controller: controller,
-      autofocus: true,
+      autofocus: false,
       decoration: InputDecoration(
         labelText: labelText,
         labelStyle: YournalTextStyles.labelHintStyle(),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class YournalAppbar extends StatelessWidget implements PreferredSizeWidget{
   final IconData? icon;
-  
-  const YournalAppbar({super.key, this.icon});
+  final VoidCallback? onPressed;
+  const YournalAppbar({super.key, this.icon, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class YournalAppbar extends StatelessWidget implements PreferredSizeWidget{
       elevation: 0,
       backgroundColor: Colors.transparent,
       leading: IconButton(
-        onPressed: (){}, 
+        onPressed: onPressed, 
         icon: Icon(
           icon,
           color: Colors.white,
