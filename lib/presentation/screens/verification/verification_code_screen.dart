@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:yournal/config/styles/yournal_responsive_sizes.dart';
 import 'package:yournal/config/styles/yournal_text_styles.dart';
 import 'package:yournal/config/themes/yournal_themes.dart';
-import 'package:yournal/presentation/widgets/shared/verfication_code_input.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_appbar.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_container.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_submit_button.dart';
+import 'package:yournal/presentation/widgets/global_shared/verfication_code_input.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_appbar.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_container.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_submit_button.dart';
 
 class VerificationCodeScreen extends StatelessWidget {
   const VerificationCodeScreen({super.key});

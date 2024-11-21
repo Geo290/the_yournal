@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:yournal/config/styles/yournal_text_styles.dart';
 import 'package:yournal/presentation/screens/signup/personal_info_screen.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_appbar.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_container.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_text_field.dart';
-import 'package:yournal/presentation/widgets/shared/yournal_submit_button.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_appbar.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_container.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_text_field.dart';
+import 'package:yournal/presentation/widgets/global_shared/yournal_submit_button.dart';
 
 class SigninScreen extends StatefulWidget {
   const SigninScreen({super.key});
